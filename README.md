@@ -6,6 +6,4 @@ But that's not all! With our referral program, you can earn even more. Invite yo
 
 Plus, our app is designed with a beautiful user interface and optimized for a seamless user experience. Start earning today with EBRSNG!
 
-<a href='https://play.google.com/store/apps/details?id=com.blackstackhub.ebrsng&hl=en-US&ah=WNIlRmUKRT1YYCEwY8gCKLCtK-k'>
 ![play-store-button](https://cloud.githubusercontent.com/assets/5692567/10923351/6b688a92-8278-11e5-9973-8ffbf3c5cc52.png)
-</a>
