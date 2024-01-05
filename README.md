@@ -1,6 +1,6 @@
 # EBRSNG App - PHP Backend Repository
 
-Welcome to the EBRSNG PHP backend repository! This repository houses the server-side logic for the EBRSNG app, a project created with [Flutter](https://github.com/devfemibadmus/ebrsng-flutter) for the UI/UX. Below, you'll find information on features, the app's history, how it works, a screenshot, the benefits, and contact details.
+Welcome to the EBRSNG PHP backend repository! This repository houses the server-side logic for the EBRSNG app, a project created with [ebrsng-futter](https://github.com/devfemibadmus/ebrsng-flutter) for the UI/UX. Below, you'll find information on features, the app's history, how it works, a screenshot, the benefits, and contact details.
 
 ## Features
 
@@ -65,7 +65,7 @@ The EBRSNG app serves as an excellent avenue to make side hustle money through G
 
 ## App Background
 
-Two years ago, faced with frequent power supply issues in my living compound, I created the EBRSNG app. Designed with [Flutter](https://github.com/devfemibadmus/ebrsng-flutter) for the frontend and PHP for the backend, the app allowed users to earn rewards by completing tasks and watching ads. In just two months, we generated $149 from Google AdMob, helping us cope with the challenges of power supply.
+Two years ago, faced with frequent power supply issues in my living compound, I created the EBRSNG app. Designed with [ebrsng-flutter](https://github.com/devfemibadmus/ebrsng-flutter) for the frontend and PHP for the backend, the app allowed users to earn rewards by completing tasks and watching ads. In just two months, we generated $149 from Google AdMob, helping us cope with the challenges of power supply.
 
 Though I deleted the app last year, I've decided to bring it back. I invite anyone interested in replicating the idea or contributing to the project to contact me for updated requirements.
 
