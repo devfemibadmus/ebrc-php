@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+Options -Indexes
+
+ErrorDocument 403 https://blackstackhub.github.io/ebrsng/404.html
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?path=$1 [L,QSA]

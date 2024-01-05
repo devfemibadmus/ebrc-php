@@ -1,0 +1,46 @@
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+          }
+          
+          form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px lightgray;
+            text-align: center;
+            width: 400px;
+          }
+      input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 10px #ccc;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .error-message {
+        color: red;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 14px;
+        color: gray;
+      }

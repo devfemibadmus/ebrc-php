@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Cashout Page</title>
+  </head>
+  <body>
+    <div class="cashout-container">
+      <h3 id="banking"></h3>
+      <form id="cashout" method="POST">
+        <input type="text" id="username" name="username" required/>
+        <input type="password" id="password" name="password" required/>
+        <span class="amount_input">
+          <input type="number" id="amount" name="amount" placeholder="amount" required oninput="checkInputValue()"/>
+          <span class="error-message" id="error"></span>
+        </span>
+        <br>
+        <p>Current Balance: <span id="current-balance">0</span></p>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <script src="../static/script.js"></script>
+  </body>
+</html>

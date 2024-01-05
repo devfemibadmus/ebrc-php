@@ -1,0 +1,162 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.black-bg{
+  background-color: black;
+}
+
+.cashout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label,
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px lightgray;
+}
+
+input[type="text"],
+input[type="password"] {
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+#current-balance {
+  font-weight: bold;
+}
+.cashout-container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form#cashout-form {
+  display: inline-block;
+}
+
+form#cashout-form input[type="text"], form#cashout-form input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+form#cashout-form input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form#cashout-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.amount_input {
+  position: relative;
+}
+.amount_input input {
+  padding-right: 18px;
+}
+.amount_input:after {
+  position: absolute;
+  top: 0;
+  content: "₦";
+  right: 5px;
+}
+.error-message {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  color: red;
+  font-size: 12px;
+}
+
+body {
+	background-color: #F0FFFF;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+.message {
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px #888888;
+	padding: 20px;
+	margin: 50px auto;
+	width: 80%;
+  max-width: 600px;
+	text-align: center;
+}
+h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+button {
+	border: none;
+	border-radius: 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px 20px;
+	margin-top: 20px;
+}
+.success-button {
+	background-color: #228B22;
+}
+.success-message {
+	background-color: #90EE90;
+}
+
+.success-h1 {
+	color: #228B22;
+}
+.error-button {
+	background-color: #8b2222;
+}
+.error-messag {
+	background-color: #ee9090;
+}
+
+.error-h1 {
+	color: #8b2222;
+}
