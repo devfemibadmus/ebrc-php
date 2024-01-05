@@ -53,6 +53,10 @@ The EBRSNG app serves as an excellent avenue to make side hustle money through G
 
 ![Google Admob Current Payments](readme/Screenshot%20(1003).png?raw=true)
 
+![Google Play Console Dashboard](readme/Screenshot%20(1000).png?raw=true)
+
+![Publish to Playstore](readme/Screenshot%20(1001).png?raw=true)
+
 ## App Screenshot
 
 | Google Admob App Overview                   | Google Admob Current Payments    |
