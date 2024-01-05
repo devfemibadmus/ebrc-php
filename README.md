@@ -1,11 +1,81 @@
-# Earn By Rewards NG
+# EBRSNG App - PHP Backend Repository
 
-EBRSNG is the ultimate app for earning real cash rewards in Nigeria! With a simple one-time activation fee of N1,000, users can start earning coins by watching ads and playing games. Use your coins to play games and win cash rewards of at least N50. As you level up, you can unlock even bigger rewards, with some games paying out N500!
+Welcome to the EBRSNG PHP backend repository! This repository houses the server-side logic for the EBRSNG app, a project created with [Flutter](https://github.com/devfemibadmus/ebrsng-flutter) for the UI/UX. Below, you'll find information on features, the app's history, how it works, a screenshot, the benefits, and contact details.
 
-But that's not all! With our referral program, you can earn even more. Invite your friends and earn N200, N400, N700, or even N1,000 for a super referral! All payments are legitimate and secure, and we guarantee to pay out within 24 hours.
+## Features
 
-Plus, our app is designed with a beautiful user interface and optimized for a seamless user experience. Start earning today with EBRSNG!
+1. **Paystack Integration on PHP**
+   - Securely handle payments with Paystack integration.
 
-<a href='https://play.google.com/store/apps/details?id=com.blackstackhub.ebrsng&hl=en-US&ah=WNIlRmUKRT1YYCEwY8gCKLCtK-k'>
-<img src='https://cloud.githubusercontent.com/assets/5692567/10923351/6b688a92-8278-11e5-9973-8ffbf3c5cc52.png'/>
-</a>
+2. **Google Ads Serving**
+   - Monetize the app with Google Ads, providing additional revenue streams.
+
+3. **Account and Task Management**
+   - Efficiently manage user accounts and tasks within the app.
+
+## How It Works
+
+1. **One-Time Activation Fee**
+   - For a simple one-time activation fee of N1,000, users unlock the door to a world of earning opportunities.
+
+2. **Earn Coins Easily**
+   - Start earning coins effortlessly by watching ads and playing games within the app. The more you engage, the more coins you accumulate.
+
+3. **Play Games, Win Cash**
+   - Use your earned coins to play games and stand a chance to win real cash rewards starting from N50. As you level up, unlock bigger rewards, with some games offering an exciting payout of N500!
+
+## Referral Program
+
+Maximize your earnings with our referral program. Invite your friends and enjoy the benefits:
+
+- N200 for a successful referral
+- N400 for a super referral
+- N700 for an outstanding referral
+- N1,000 for an exceptional referral
+
+## Why This App?
+
+The EBRSNG app serves as an excellent avenue to make side hustle money through Google AdMob. Here's why:
+
+- **Monetization Opportunity**: Utilize Google Ads to generate revenue, turning your spare time into a profitable venture.
+
+- **Low Barrier to Entry**: With a one-time activation fee of N1,000, users can unlock earning opportunities without significant upfront costs.
+
+- **Flexibility**: Engage in tasks and games at your convenience, making it an ideal side hustle that fits into your schedule.
+
+## Process Screenshot
+
+![PhpMyAdmin Account](readme/Screenshot%20(998).png?raw=true)
+
+![PhpMyAdmin Notification](readme/Screenshot%20(999).png?raw=true)
+
+![Google Admob App Overview](readme/Screenshot%20(1002).png?raw=true)
+
+![Google Admob Current Payments](readme/Screenshot%20(1003).png?raw=true)
+
+## App Screenshot
+
+| Google Admob App Overview                   | Google Admob Current Payments    |
+| ------------------------------------------- | -------------------------------- |
+| ![Overview](readme/Screenshot%20(1002).png?raw=true) | ![Payments](readme/Screenshot%20(1003).png?raw=true) |
+
+## App Background
+
+Two years ago, faced with frequent power supply issues in my living compound, I created the EBRSNG app. Designed with [Flutter](https://github.com/devfemibadmus/ebrsng-flutter) for the frontend and PHP for the backend, the app allowed users to earn rewards by completing tasks and watching ads. In just two months, we generated $149 from Google AdMob, helping us cope with the challenges of power supply.
+
+Though I deleted the app last year, I've decided to bring it back. I invite anyone interested in replicating the idea or contributing to the project to contact me for updated requirements.
+
+## App Statistics
+
+- **Play Store Availability**: The app is available on the Play Store with over 50 downloads.
+
+## Contact Information
+
+Feel free to reach out to me for any inquiries, updates, or collaboration opportunities related to the EBRSNG app. Let's create something amazing together!
+
+**Author:** [devfemibadmus](https://github.com/devfemibadmus)  
+**Email:** devfemibadmus@gmail.com
+
+Thank you for your interest in the EBRSNG app!
+
+[![Download on Google Play](https://cloud.githubusercontent.com/assets/5692567/10923351/6b688a92-8278-11e5-9973-8ffbf3c5cc52.png)](https://play.google.com/store/apps/details?id=com.blackstackhub.ebrsng&hl=en-US&ah=WNIlRmUKRT1YYCEwY8gCKLCtK-k)
