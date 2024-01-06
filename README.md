@@ -5,10 +5,7 @@ Welcome to the EBRSNG PHP backend repository! This repository houses the server-
 ## Features
 
 1. **Paystack Integration on PHP**
-   - Securely handle payments with Paystack integration.
-
-2. **Google Ads Serving**
-   - Monetize the app with Google Ads, providing additional revenue streams.
+   - Securely handle payments with Paystack integration.(This has been removed in the latest update)
 
 3. **Account and Task Management**
    - Efficiently manage user accounts and tasks within the app.
@@ -72,14 +69,6 @@ Though I deleted the app last year, I've decided to bring it back. I invite anyo
 ## App Statistics
 
 - **Play Store Availability**: The app is available on the Play Store with over 50 downloads.
-
-## Contact Information
-
-Feel free to reach out to me for any inquiries, updates, or collaboration opportunities related to the EBRSNG app. Let's create something amazing together!
-
-**Author:** [devfemibadmus](https://github.com/devfemibadmus)  
-**Email:** devfemibadmus@gmail.com
-
-Thank you for your interest in the EBRSNG app!
+- **App Depreciated**: The app is depreciated bcus the backend server is no longer.
 
 [![Download on Google Play](https://cloud.githubusercontent.com/assets/5692567/10923351/6b688a92-8278-11e5-9973-8ffbf3c5cc52.png)](https://play.google.com/store/apps/details?id=com.blackstackhub.ebrsng&hl=en-US&ah=WNIlRmUKRT1YYCEwY8gCKLCtK-k)
