@@ -18,7 +18,6 @@ class Account {
     public $earnBalance;
     public $accountEditable;
     public $coinBalance;
-    public $rewardAds;
     public $pendingCashout;
     public $cashoutAmount;
 
