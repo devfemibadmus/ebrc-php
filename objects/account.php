@@ -8,7 +8,6 @@ class Account {
     public $id;
     public $email;
     public $referral;
-    public $activated;
     public $username;
     public $password;
     public $paid_referral;
@@ -20,13 +19,6 @@ class Account {
     public $account_editable;
     public $coin_balance;
     public $reward_ads;
-    public $tic_tac_toe_1;
-    public $tic_tac_toe_2;
-    public $tic_tac_toe_3;
-    public $user_referral;
-    public $super_referral;
-    public $might_referral;
-    public $premium_referral;
     public $pending_cashout;
     public $cashout_amount;
 
@@ -179,15 +171,6 @@ class Account {
         }
         return $results;
     }
-    public function activate(){
-        $query = "UPDATE accounts SET activated=true WHERE id=:id";
-        $stmt = $this->conn->prepare($query);
-        $stmt->bindParam(':id', $this->id);
-        if($stmt->execute()){
-            return true;
-        }
-        return false;
-    }
     public function balance(){
         $query = "UPDATE accounts SET account_balance=:account_balance, earn_balance=:earn_balance WHERE id=:id";
         $stmt = $this->conn->prepare($query);
@@ -202,4 +185,3 @@ class Account {
 
 }
 
-?>

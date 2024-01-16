@@ -69,10 +69,6 @@ switch ($path) {
         include 'admin/admin.php';
         break;
 
-
-    case 'tictactoe':
-        include 'games/tictactoe.php';
-        break;
     default:
         include 'website/z.html';
         break;

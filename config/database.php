@@ -43,7 +43,6 @@ class Database {
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 email VARCHAR(255),
                 referral VARCHAR(255),
-                activated BOOLEAN DEFAULT 0,
                 username VARCHAR(255) NOT NULL,
                 password VARCHAR(255) NOT NULL,
                 paid_referral VARCHAR(255),
@@ -55,13 +54,6 @@ class Database {
                 account_editable BOOLEAN DEFAULT 1,
                 coin_balance INT DEFAULT 0,
                 reward_ads INT DEFAULT 0,
-                tic_tac_toe_1 INT DEFAULT 0,
-                tic_tac_toe_2 INT DEFAULT 0,
-                tic_tac_toe_3 INT DEFAULT 0,
-                user_referral INT DEFAULT 0,
-                super_referral INT DEFAULT 0,
-                might_referral INT DEFAULT 0,
-                premium_referral INT DEFAULT 0,
                 pending_cashout BOOLEAN DEFAULT 0,
                 cashout_amount DECIMAL(10, 2) DEFAULT 0.00
             );
@@ -88,4 +80,3 @@ class Database {
         $this->conn->exec($sql);
     }
 }
-?>
