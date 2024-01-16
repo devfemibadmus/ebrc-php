@@ -10,17 +10,17 @@ class Account {
     public $referral;
     public $username;
     public $password;
-    public $paid_referral;
-    public $account_name;
-    public $account_uname;
-    public $account_number;
-    public $account_balance;
-    public $earn_balance;
-    public $account_editable;
-    public $coin_balance;
-    public $reward_ads;
-    public $pending_cashout;
-    public $cashout_amount;
+    public $paidReferral;
+    public $accountName;
+    public $accountUname;
+    public $accountNumber;
+    public $accountBalance;
+    public $earnBalance;
+    public $accountEditable;
+    public $coinBalance;
+    public $rewardAds;
+    public $pendingCashout;
+    public $cashoutAmount;
 
     // constructor with $db as database connection
     public function __construct($db) {
@@ -86,55 +86,55 @@ class Account {
         return $results;
     }
     public function bank(){
-        $query = "UPDATE accounts SET account_name=:account_name, account_uname=:account_uname, account_number=:account_number, account_editable=:account_editable WHERE id=:id";
+        $query = "UPDATE accounts SET accountName=:accountName, accountUname=:accountUname, accountNumber=:accountNumber, accountEditable=:accountEditable WHERE id=:id";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':id', $this->id);
-        $stmt->bindParam(':account_name', $this->account_name);
-        $stmt->bindParam(':account_uname', $this->account_uname);
-        $stmt->bindParam(':account_number', $this->account_number);
-        $stmt->bindParam(':account_editable', $this->account_editable);
+        $stmt->bindParam(':accountName', $this->accountName);
+        $stmt->bindParam(':accountUname', $this->accountUname);
+        $stmt->bindParam(':accountNumber', $this->accountNumber);
+        $stmt->bindParam(':accountEditable', $this->accountEditable);
         if($stmt->execute()){
             return true;
         }
         return false;
     }
     public function coin(){
-        $query = "UPDATE accounts SET coin_balance=:coin_balance WHERE id=:id";
+        $query = "UPDATE accounts SET coinBalance=:coinBalance WHERE id=:id";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':id', $this->id);
-        $stmt->bindParam(':coin_balance', $this->coin_balance);
+        $stmt->bindParam(':coinBalance', $this->coinBalance);
         if($stmt->execute()){
             return true;
         }
         return false;
     }
     public function cashout(){
-        $query = "UPDATE accounts SET account_balance=:account_balance, pending_cashout=:pending_cashout WHERE id=:id";
+        $query = "UPDATE accounts SET accountBalance=:accountBalance, pendingCashout=:pendingCashout WHERE id=:id";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':id', $this->id);
-        $stmt->bindParam(':account_balance', $this->account_balance);
-        $stmt->bindParam(':pending_cashout', $this->pending_cashout);
+        $stmt->bindParam(':accountBalance', $this->accountBalance);
+        $stmt->bindParam(':pendingCashout', $this->pendingCashout);
         if($stmt->execute()){
             return true;
         }
         return false;
     }
     public function create_cashout(){
-        $query = "INSERT INTO cashout SET username=:username, cashout_amount=cashout_amount";
+        $query = "INSERT INTO cashout SET username=:username, cashoutAmount=cashoutAmount";
         $stmt = $this->conn->prepare($query);
         $this->password = password_hash($this->password, PASSWORD_DEFAULT);
         $stmt->bindParam(':username', $this->username);
-        $stmt->bindParam(':cashout_amount', $this->cashout_amount);
+        $stmt->bindParam(':cashoutAmount', $this->cashoutAmount);
         if($stmt->execute()){
             return true;
         }
         return false;
     }
     public function paidCashout(){
-        $query = "UPDATE cashout SET paid=true WHERE username=:username AND cashout_amount=:cashout_amount AND paid=false";
+        $query = "UPDATE cashout SET paid=true WHERE username=:username AND cashoutAmount=:cashoutAmount AND paid=false";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':username', $this->username);
-        $stmt->bindParam(':cashout_amount', $this->cashout_amount);
+        $stmt->bindParam(':cashoutAmount', $this->cashoutAmount);
         if($stmt->execute()){
             return true;
         }
@@ -142,10 +142,10 @@ class Account {
     }
     
     public function paidCashoutAccount(){
-        $query = "UPDATE accounts SET pending_cashout=:pending_cashout WHERE id=:id";
+        $query = "UPDATE accounts SET pendingCashout=:pendingCashout WHERE id=:id";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':id', $this->id);
-        $stmt->bindParam(':pending_cashout', $this->pending_cashout);
+        $stmt->bindParam(':pendingCashout', $this->pendingCashout);
         if($stmt->execute()){
             return true;
         }
@@ -162,7 +162,7 @@ class Account {
         return $results;
     }
     public function getPendingCashOutAccounts(){
-        $query = "SELECT * FROM accounts WHERE pending_cashout=true";
+        $query = "SELECT * FROM accounts WHERE pendingCashout=true";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
         $results = array();
@@ -172,11 +172,11 @@ class Account {
         return $results;
     }
     public function balance(){
-        $query = "UPDATE accounts SET account_balance=:account_balance, earn_balance=:earn_balance WHERE id=:id";
+        $query = "UPDATE accounts SET accountBalance=:accountBalance, earnBalance=:earnBalance WHERE id=:id";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':id', $this->id);
-        $stmt->bindParam(':account_balance', $this->account_balance);
-        $stmt->bindParam(':earn_balance', $this->earn_balance);
+        $stmt->bindParam(':accountBalance', $this->accountBalance);
+        $stmt->bindParam(':earnBalance', $this->earnBalance);
         if($stmt->execute()){
             return true;
         }

@@ -26,8 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $account->getUser();
             if($stmt){
                 $account->id = $stmt['id'];
-                $account->pending_cashout = 0;
-                $account->cashout_amount = $amount;
+                $account->pendingCashout = 0;
+                $account->cashoutAmount = $amount;
                 $pay = $account->paidCashoutAccount();
                 $update = $account->paidCashout();
                 if($pay && $update){
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 // Get all accounts
 $all_accounts = $account->getPendingCashOutAccounts();
 // Get pending cashouts
-$pending_cashouts = $account->getPendingCashOut();
+$pendingCashouts = $account->getPendingCashOut();
 
 // Create an empty array to store the merged data
 $merged_data = array();
@@ -66,9 +66,9 @@ $merged_data = array();
 // Iterate over all accounts
 foreach ($all_accounts as $account_data) {
   // Check if the account has a pending cashout
-  if (in_array($account_data['username'], array_column($pending_cashouts, 'username'))) {
+  if (in_array($account_data['username'], array_column($pendingCashouts, 'username'))) {
     // Merge the two arrays to get the desired result
-    $merged_data[] = array_merge($account_data, array_filter($pending_cashouts, function($item) use($account_data) {
+    $merged_data[] = array_merge($account_data, array_filter($pendingCashouts, function($item) use($account_data) {
       return $item['username'] == $account_data['username'];
     })[0]);
   }
@@ -100,13 +100,13 @@ foreach ($all_accounts as $account_data) {
                     <td><?php echo $cashout['id']; ?></td>
                     <td><?php echo $cashout['email']; ?></td>
                     <td><?php echo $cashout['username']; ?></td>
-                    <td><?php echo $cashout['account_name']; ?></td>
-                    <td><?php echo $cashout['account_uname']; ?></td>
-                    <td><?php echo $cashout['account_number']; ?></td>
-                    <td><?php echo $cashout['account_balance']; ?></td>
-                    <td><?php echo $cashout['earn_balance']; ?></td>
-                    <td><?php echo $cashout['coin_balance']; ?></td>
-                    <td><?php echo $cashout['cashout_amount']; ?></td>
+                    <td><?php echo $cashout['accountName']; ?></td>
+                    <td><?php echo $cashout['accountUname']; ?></td>
+                    <td><?php echo $cashout['accountNumber']; ?></td>
+                    <td><?php echo $cashout['accountBalance']; ?></td>
+                    <td><?php echo $cashout['earnBalance']; ?></td>
+                    <td><?php echo $cashout['coinBalance']; ?></td>
+                    <td><?php echo $cashout['cashoutAmount']; ?></td>
                     <td><?php echo $cashout['date']; ?></td>
                     <td><input type="checkbox" name="cashouts[]" value="<?php echo $cashout['username']; ?>"></td>
                 </tr>

@@ -49,12 +49,12 @@ if($stmt != false){
     if($preward >= 300){
         //
         $notifications->amount = 2;
-        $account->coin_balance = $stmt['coin_balance'] + 2;
+        $account->coinBalance = $stmt['coinBalance'] + 2;
     }
     else{
         //
         $notifications->amount = 1;
-        $account->coin_balance = $stmt['coin_balance'] + 1;
+        $account->coinBalance = $stmt['coinBalance'] + 1;
     }
     $notifications->comment = 'You watch an Ad and just got a new coin from the ad you watch. time:'.$diff->i;
 

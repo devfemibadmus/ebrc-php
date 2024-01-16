@@ -32,13 +32,13 @@ $date = new DateTime();
 $formatted_date = $date->format("Y-m-d H:i:s");
 
 if($stmt != false){
-    if($stmt['account_editable'] == false){
-        if($stmt['pending_cashout'] == false){
-            if($stmt['account_balance'] >= $amount){
+    if($stmt['accountEditable'] == false){
+        if($stmt['pendingCashout'] == false){
+            if($stmt['accountBalance'] >= $amount){
                 $account->id = $stmt['id'];
-                $account->account_balance = $stmt['account_balance'] - $amount;
-                $account->pending_cashout = true;
-                $account->cashout_amount = $amount;
+                $account->accountBalance = $stmt['accountBalance'] - $amount;
+                $account->pendingCashout = true;
+                $account->cashoutAmount = $amount;
                 $account->username = $stmt['username'];
                 $account->cashout();
                 $notifications->account_id = $stmt['id'];
@@ -58,7 +58,7 @@ if($stmt != false){
                 }
             }
             else{
-                $response = 'Your balance '.$stmt['account_balance'].' is too low to cashout '.$amount;
+                $response = 'Your balance '.$stmt['accountBalance'].' is too low to cashout '.$amount;
             }
         }
         else{

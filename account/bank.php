@@ -26,33 +26,33 @@ $account->username = $_POST['username'];
 $account->password = $_POST['password'];
 
 $stmt = $account->signin();
-if($stmt != false && $stmt['account_editable']){
+if($stmt != false && $stmt['accountEditable']){
     // Update account information
     $id = $stmt['id'];
-    $account_name = $stmt['account_name'];
-    $account_uname = $stmt['account_uname'];
-    $account_number = $stmt['account_number'];
+    $accountName = $stmt['accountName'];
+    $accountUname = $stmt['accountUname'];
+    $accountNumber = $stmt['accountNumber'];
     $date = new DateTime();
     $formatted_date = $date->format("Y-m-d H:i:s");
 
-    if($stmt['account_editable'] == true && isset($_POST['account_name']) && isset($_POST['account_uname']) && isset($_POST['account_number'])){
-        $account_name = $_POST['account_name'];
-        $account_uname =  $_POST['account_uname'];
-        $account_number = $_POST['account_number'];
-        $account->account_editable = 0;
+    if($stmt['accountEditable'] == true && isset($_POST['accountName']) && isset($_POST['accountUname']) && isset($_POST['accountNumber'])){
+        $accountName = $_POST['accountName'];
+        $accountUname =  $_POST['accountUname'];
+        $accountNumber = $_POST['accountNumber'];
+        $account->accountEditable = 0;
     }
     
     $account->id = $id;
-    $account->account_name = $account_name;
-    $account->account_uname = $account_uname;
-    $account->account_number = $account_number;
+    $account->accountName = $accountName;
+    $account->accountUname = $accountUname;
+    $account->accountNumber = $accountNumber;
 
     $notifications->account_id = $id;
     $notifications->amount = 0;
     $notifications->referral = '';
     $notifications->date = $formatted_date;
     $notifications->type = 'Bank Info Update';
-    $notifications->comment = 'You update your Bank account details. '.$account_uname.' '.$account_number.' '.$account_name;
+    $notifications->comment = 'You update your Bank account details. '.$accountUname.' '.$accountNumber.' '.$accountName;
     
     if($account->bank() && $notifications->createNotifications()){
         $response = array(

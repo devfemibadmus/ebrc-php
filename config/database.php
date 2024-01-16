@@ -45,17 +45,17 @@ class Database {
                 referral VARCHAR(255),
                 username VARCHAR(255) NOT NULL,
                 password VARCHAR(255) NOT NULL,
-                paid_referral VARCHAR(255),
-                account_name VARCHAR(255),
-                account_uname VARCHAR(255),
-                account_number VARCHAR(255),
-                account_balance DECIMAL(10, 2) DEFAULT 0.00,
-                earn_balance DECIMAL(10, 2) DEFAULT 0.00,
-                account_editable BOOLEAN DEFAULT 1,
-                coin_balance INT DEFAULT 0,
-                reward_ads INT DEFAULT 0,
-                pending_cashout BOOLEAN DEFAULT 0,
-                cashout_amount DECIMAL(10, 2) DEFAULT 0.00
+                paidReferral VARCHAR(255),
+                accountName VARCHAR(255),
+                accountUname VARCHAR(255),
+                accountNumber INT DEFAULT 0,
+                accountBalance DECIMAL(10, 2) DEFAULT 0.00,
+                earnBalance DECIMAL(10, 2) DEFAULT 0.00,
+                accountEditable BOOLEAN DEFAULT 1,
+                coinBalance INT DEFAULT 0,
+                rewardAds INT DEFAULT 0,
+                pendingCashout BOOLEAN DEFAULT 0,
+                cashoutAmount DECIMAL(10, 2) DEFAULT 0.00
             );
         ";
 
