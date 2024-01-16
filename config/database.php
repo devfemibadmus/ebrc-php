@@ -72,7 +72,7 @@ class Database {
                 amount DECIMAL(10, 2) DEFAULT 0.00,
                 referral VARCHAR(255),
                 comment TEXT,
-                account_id INT NOT NULL,
+                accountId INT NOT NULL,
                 FOREIGN KEY (account_id) REFERENCES accounts(id)
             );
         ";
