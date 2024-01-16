@@ -53,7 +53,6 @@ class Database {
                 earnBalance DECIMAL(10, 2) DEFAULT 0.00,
                 accountEditable BOOLEAN DEFAULT 1,
                 coinBalance INT DEFAULT 0,
-                rewardAds INT DEFAULT 0,
                 pendingCashout BOOLEAN DEFAULT 0,
                 cashoutAmount DECIMAL(10, 2) DEFAULT 0.00
             );
@@ -72,8 +71,7 @@ class Database {
                 amount DECIMAL(10, 2) DEFAULT 0.00,
                 referral VARCHAR(255),
                 comment TEXT,
-                accountId INT NOT NULL,
-                FOREIGN KEY (account_id) REFERENCES accounts(id)
+                accountId INT NOT NULL
             );
         ";
 
