@@ -60,7 +60,7 @@ if($stmt != false){
 
     $account->id = $stmt['id'];
 
-    $notifications->account_id = $stmt['id'];
+    $notifications->accountId = $stmt['id'];
     $notifications->referral = '';
     $notifications->date = $formatted_date;
     $notifications->type = 'coin';

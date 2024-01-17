@@ -47,7 +47,7 @@ if($stmt != false && $stmt['accountEditable']){
     $account->accountUname = $accountUname;
     $account->accountNumber = $accountNumber;
 
-    $notifications->account_id = $id;
+    $notifications->accountId = $id;
     $notifications->amount = 0;
     $notifications->referral = '';
     $notifications->date = $formatted_date;

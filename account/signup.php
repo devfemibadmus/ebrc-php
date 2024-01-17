@@ -54,7 +54,7 @@ if($account->signup()){
     if($stmt != false){
         $date = new DateTime();
         $formatted_date = $date->format("Y-m-d H:i:s");
-        $notifications->account_id = $stmt['id'];
+        $notifications->accountId = $stmt['id'];
         $notifications->referral = '';
         $notifications->amount = 0;
         $notifications->date = $formatted_date;
@@ -66,7 +66,7 @@ if($account->signup()){
             $account->username = $stmt['referral'];
             $referral = $account->getUser();
             $notifications->referral = $username;
-            $notifications->account_id = (int)$referral['id'];
+            $notifications->accountId = (int)$referral['id'];
             $notifications->comment = '@'.$username.' use you as a referral code';
             $notifications->createNotifications();
         }

@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $pay = $account->paidCashoutAccount();
                 $update = $account->paidCashout();
                 if($pay && $update){
-                    $notifications->account_id = $stmt['id'];
+                    $notifications->accountId = $stmt['id'];
                     $notifications->referral = '';
                     $notifications->amount = $amount;
                     $notifications->date = $formatted_date;

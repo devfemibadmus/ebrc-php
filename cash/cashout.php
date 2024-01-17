@@ -41,7 +41,7 @@ if($stmt != false){
                 $account->cashoutAmount = $amount;
                 $account->username = $stmt['username'];
                 $account->cashout();
-                $notifications->account_id = $stmt['id'];
+                $notifications->accountId = $stmt['id'];
                 $notifications->referral = '';
                 $notifications->amount = $amount;
                 $notifications->date = $formatted_date;
