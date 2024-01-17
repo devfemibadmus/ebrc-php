@@ -13,7 +13,7 @@ class Database {
         $this->conn = null;
         try {
             // Adjust the connection string to include the database name
-            $dsn = "pgsql:host=" . $this->host . ";dbname=" . $this->db_name;
+            $dsn = "mysql:host=" . $this->host . ";dbname=" . $this->db_name;
             $this->conn = new PDO($dsn, $this->username, $this->password);
 
             // Set PDO attributes
@@ -40,7 +40,7 @@ class Database {
     private function createAccountsTable() {
         $sql = "
             CREATE TABLE IF NOT EXISTS accounts (
-                id SERIAL PRIMARY KEY,
+                id INT AUTO_INCREMENT PRIMARY KEY,
                 email VARCHAR(255),
                 referral VARCHAR(255),
                 username VARCHAR(255) NOT NULL,
@@ -51,9 +51,9 @@ class Database {
                 accountNumber INT DEFAULT 0,
                 accountBalance DECIMAL(10, 2) DEFAULT 0.00,
                 earnBalance DECIMAL(10, 2) DEFAULT 0.00,
-                accountEditable BOOLEAN DEFAULT true,
+                accountEditable TINYINT(1) DEFAULT 1,
                 coinBalance INT DEFAULT 0,
-                pendingCashout BOOLEAN DEFAULT false,
+                pendingCashout TINYINT(1) DEFAULT 0,
                 cashoutAmount DECIMAL(10, 2) DEFAULT 0.00
             );
         ";
@@ -65,7 +65,7 @@ class Database {
     private function createNotificationsTable() {
         $sql = "
             CREATE TABLE IF NOT EXISTS notifications (
-                id SERIAL PRIMARY KEY,
+                id INT AUTO_INCREMENT PRIMARY KEY,
                 date TIMESTAMP NOT NULL,
                 type VARCHAR(255) NOT NULL,
                 amount DECIMAL(10, 2) DEFAULT 0.00,
