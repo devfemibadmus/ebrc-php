@@ -5,7 +5,7 @@ class Database {
     private $db_name = "ebrsng";
     private $username = "ebrsng";
     private $password = "helloworld";
-    
+
     public $conn;
 
     // get the database connection
