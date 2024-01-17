@@ -4,14 +4,14 @@ class Database {
     private $db_name = "ebrsng";
     private $username = "ebrsng";
     private $password = "helloworld";
-    
+
     public $conn;
 
     // get the database connection
     public function getConnection() {
         $this->conn = null;
         try {
-            $this->conn = new PDO("mysql:host=" . $this->host, $this->username, $this->password);
+            $this->conn = new PDO("pgsql:host=" . $this->host, $this->username, $this->password);
             $this->conn->exec("set names utf8");
 
             // Create the database if it does not exist
