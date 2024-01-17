@@ -72,3 +72,7 @@ Though I deleted the app last year, I've decided to bring it back. I invite anyo
 - **App Depreciated**: The app is depreciated bcus the backend server is no longer.
 
 [![Download on Google Play](https://cloud.githubusercontent.com/assets/5692567/10923351/6b688a92-8278-11e5-9973-8ffbf3c5cc52.png)](https://play.google.com/store/apps/details?id=com.blackstackhub.ebrsng&hl=en-US&ah=WNIlRmUKRT1YYCEwY8gCKLCtK-k)
+
+
+
+fix user earn balance
