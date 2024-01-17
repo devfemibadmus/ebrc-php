@@ -3,7 +3,8 @@ require_once 'config/header.php';
 include_once 'config/database.php';
 include_once 'objects/account.php';
 include_once 'objects/notifications.php';
-
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 $database = new Database();
 $db = $database->getConnection();
 
