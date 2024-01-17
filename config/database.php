@@ -1,4 +1,5 @@
 <?php
+
 class Database {
     private $host = "localhost";
     private $db_name = "ebrsng";
@@ -39,7 +40,7 @@ class Database {
     private function createAccountsTable() {
         $sql = "
             CREATE TABLE IF NOT EXISTS accounts (
-                id INT AUTO_INCREMENT PRIMARY KEY,
+                id SERIAL PRIMARY KEY,
                 email VARCHAR(255),
                 referral VARCHAR(255),
                 username VARCHAR(255) NOT NULL,
@@ -64,8 +65,8 @@ class Database {
     private function createNotificationsTable() {
         $sql = "
             CREATE TABLE IF NOT EXISTS notifications (
-                id INT AUTO_INCREMENT PRIMARY KEY,
-                date DATETIME NOT NULL,
+                id SERIAL PRIMARY KEY,
+                date TIMESTAMP NOT NULL,
                 type VARCHAR(255) NOT NULL,
                 amount DECIMAL(10, 2) DEFAULT 0.00,
                 referral VARCHAR(255),
