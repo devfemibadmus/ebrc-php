@@ -4,21 +4,20 @@ class Database {
     private $db_name = "ebrsng";
     private $username = "ebrsng";
     private $password = "helloworld";
-
+    
     public $conn;
 
     // get the database connection
     public function getConnection() {
         $this->conn = null;
         try {
-            $this->conn = new PDO("pgsql:host=" . $this->host, $this->username, $this->password);
-            $this->conn->exec("set names utf8");
+            // Adjust the connection string to include the database name
+            $dsn = "pgsql:host=" . $this->host . ";dbname=" . $this->db_name;
+            $this->conn = new PDO($dsn, $this->username, $this->password);
 
-            // Create the database if it does not exist
-            $this->conn->exec("CREATE DATABASE IF NOT EXISTS " . $this->db_name);
-
-            // Switch to the specified database
-            $this->conn->exec("USE " . $this->db_name);
+            // Set PDO attributes
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
             // Create tables if they do not exist
             $this->createAccountsTable();
