@@ -5,7 +5,7 @@ class Database {
     private $db_name = "ebrsng";
     private $username = "ebrsng";
     private $password = "helloworld";
-    
+
     public $conn;
 
     // get the database connection
@@ -51,9 +51,9 @@ class Database {
                 accountNumber INT DEFAULT 0,
                 accountBalance DECIMAL(10, 2) DEFAULT 0.00,
                 earnBalance DECIMAL(10, 2) DEFAULT 0.00,
-                accountEditable BOOLEAN DEFAULT 1,
+                accountEditable BOOLEAN DEFAULT true,
                 coinBalance INT DEFAULT 0,
-                pendingCashout BOOLEAN DEFAULT 0,
+                pendingCashout BOOLEAN DEFAULT false,
                 cashoutAmount DECIMAL(10, 2) DEFAULT 0.00
             );
         ";
