@@ -344,7 +344,7 @@ echo json_encode($response, JSON_NUMERIC_CHECK);
 ```
   
 
-[![Download on Google Play](https://cloud.githubusercontent.com/assets/5692567/10923351/6b688a92-8278-11e5-9973-8ffbf3c5cc52.png)](https://play.google.com/store/apps/details?id=com.blackstackhub.ebrc&hl=en-US&ah=WNIlRmUKRT1YYCEwY8gCKLCtK-k)
+[![Download on Google Play](https://cloud.githubusercontent.com/assets/5692567/10923351/6b688a92-8278-11e5-9973-8ffbf3c5cc52.png)](https://play.google.com/store/apps/details?id=com.blackstackhub.ebrc)
 
   
 
