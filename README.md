@@ -2,7 +2,7 @@
 # EBRC App - PHP Backend Repository
 
   
-This repository houses the server side for the [ebrc-php](https://github.com/devfemibadmus/ebrc-php) (UI/UX). This app is design basically to watch ads and make money.
+This repository houses the server side for the [ebrc-flutter](https://github.com/devfemibadmus/ebrc-flutter) (UI/UX). This app is design basically to watch ads and make money.
 
  
 **ADVANTAGES OF WATCHING ADS ON EBRC AND MINIMIZING COSTS**
