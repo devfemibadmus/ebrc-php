@@ -1,11 +1,11 @@
 
-# EBRSNG App - PHP Backend Repository
+# EBRC App - PHP Backend Repository
 
   
-This repository houses the server side for the [ebrsngapi-flutter](https://github.com/devfemibadmus/ebrsngapi-php) (UI/UX). This app is design basically to watch ads and make money.
+This repository houses the server side for the [ebrcapi-flutter](https://github.com/devfemibadmus/ebrcapi-php) (UI/UX). This app is design basically to watch ads and make money.
 
  
-**ADVANTAGES OF WATCHING ADS ON EBRSNG AND MINIMIZING COSTS**
+**ADVANTAGES OF WATCHING ADS ON EBRC AND MINIMIZING COSTS**
 
  
 1.  **Monetize Your Time:**
@@ -42,7 +42,7 @@ This repository houses the server side for the [ebrsngapi-flutter](https://githu
 
   
 
-[![Download on Google Play](https://cloud.githubusercontent.com/assets/5692567/10923351/6b688a92-8278-11e5-9973-8ffbf3c5cc52.png)](https://play.google.com/store/apps/details?id=com.blackstackhub.ebrsng&hl=en-US&ah=WNIlRmUKRT1YYCEwY8gCKLCtK-k)
+[![Download on Google Play](https://cloud.githubusercontent.com/assets/5692567/10923351/6b688a92-8278-11e5-9973-8ffbf3c5cc52.png)](https://play.google.com/store/apps/details?id=com.blackstackhub.ebrc&hl=en-US&ah=WNIlRmUKRT1YYCEwY8gCKLCtK-k)
 
   
 
@@ -57,8 +57,8 @@ This repository houses the server side for the [ebrsngapi-flutter](https://githu
 
 class Database {
     private $host = "localhost"; // Adjust to your db host
-    private $db_name = "ebrsng"; // Adjust to your db name
-    private $username = "ebrsng"; // Adjust to your db user username
+    private $db_name = "ebrc"; // Adjust to your db name
+    private $username = "ebrc"; // Adjust to your db user username
     private $password = "helloworld"; // Adjust to your db user password
 
     public $conn;
@@ -149,7 +149,7 @@ RewriteEngine On
 Options -Indexes
 
 # Custom error document for 403 Forbidden error
-ErrorDocument 403 https://github.com/devfemibadmus/ebrsng-php
+ErrorDocument 403 https://github.com/devfemibadmus/ebrc-php
 
 # Check if the requested URL does not point to an existing file
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -344,7 +344,7 @@ echo json_encode($response, JSON_NUMERIC_CHECK);
 ```
   
 
-[![Download on Google Play](https://cloud.githubusercontent.com/assets/5692567/10923351/6b688a92-8278-11e5-9973-8ffbf3c5cc52.png)](https://play.google.com/store/apps/details?id=com.blackstackhub.ebrsng&hl=en-US&ah=WNIlRmUKRT1YYCEwY8gCKLCtK-k)
+[![Download on Google Play](https://cloud.githubusercontent.com/assets/5692567/10923351/6b688a92-8278-11e5-9973-8ffbf3c5cc52.png)](https://play.google.com/store/apps/details?id=com.blackstackhub.ebrc&hl=en-US&ah=WNIlRmUKRT1YYCEwY8gCKLCtK-k)
 
   
 

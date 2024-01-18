@@ -2,8 +2,8 @@
 
 class Database {
     private $host = "localhost";
-    private $db_name = "ebrsng";
-    private $username = "ebrsng";
+    private $db_name = "ebrc";
+    private $username = "ebrc";
     private $password = "helloworld";
 
     public $conn;

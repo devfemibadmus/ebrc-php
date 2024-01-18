@@ -3,7 +3,7 @@ RewriteEngine On
 
 Options -Indexes
 
-ErrorDocument 403 https://github.com/devfemibadmus/ebrsng-php
+ErrorDocument 403 https://github.com/devfemibadmus/ebrc-php
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
