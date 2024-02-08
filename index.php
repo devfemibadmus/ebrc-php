@@ -55,18 +55,11 @@ switch ($path) {
     case 'username':
         include 'account/username.php';
         break;
-
-        
-    case 'cashout':
-        include 'cashout/cashout.php';
-        break;
-
-        
-    case 'users':
-        include 'admin/users.php';
-        break;
-    case 'devfemibadmus':
-        include 'admin/admin.php';
+        case 'cashout':
+            include 'cashout/cashout.php';
+            break;
+    case 'deleteaccount':
+        include 'account/delete.php';
         break;
 
     default:

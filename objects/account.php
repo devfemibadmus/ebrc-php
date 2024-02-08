@@ -182,5 +182,28 @@ class Account {
         return false;
     }
 
+    public function delete(){
+        $query = "SELECT id FROM accounts WHERE username = :username";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':username', $this->username);
+        $stmt->execute();
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($row) {
+            $account_id = $row['id'];
+            $query = "DELETE FROM accounts WHERE id = :id";
+            $stmt = $this->conn->prepare($query);
+            $stmt->bindParam(':id', $account_id);
+            
+            if ($stmt->execute()) {
+                return true; 
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+    
+
 }
 
