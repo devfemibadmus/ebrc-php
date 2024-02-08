@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         );
         header("Content-Type: application/json; charset=UTF-8");
         echo json_encode($response, JSON_NUMERIC_CHECK);
-        exit;
+        exit; // Stop script execution after sending JSON response
     }
 
     $account->username = $_POST['username'];
@@ -44,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     header("Content-Type: application/json");
     echo json_encode($response, JSON_NUMERIC_CHECK);
+    exit; // Stop script execution after sending JSON response
 }
 ?>
 <!DOCTYPE html>
