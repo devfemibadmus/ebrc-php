@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <h2>Delete Account</h2>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form method="post" action="/ebrc/deleteaccount">
         <div>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
