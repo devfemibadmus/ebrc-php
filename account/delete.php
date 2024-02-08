@@ -1,5 +1,4 @@
 <?php
-require_once 'config/header.php';
 include_once 'config/database.php';
 include_once 'objects/account.php';
 
